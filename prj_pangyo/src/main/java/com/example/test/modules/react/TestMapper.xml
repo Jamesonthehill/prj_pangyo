@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.example.test.modules.react.TestMapper">
+
+	<resultMap id="getSelectList" type="Map">
+		<id column="gid" property="gid"/>
+		<id column="emd_cd" property="emd_cd"/>
+		<id column="emd_nm" property="emd_nm"/>
+		<id column="sgg_oid" property="sgg_oid"/>
+		<id column="col_adm_se" property="col_adm_se"/>
+		<id column="geom" property="geom"/>
+	</resultMap>
+
+	<select id="getSelectList" resultType="Map">
+		SELECT
+			emd_cd
+			,emd_nm
+			,sgg_oid
+			,col_adm_se
+			,gid
+		FROM
+			lsmd_adm_sect_umd_11
+		WHERE 1 = 1
+	</select>
+
+</mapper>
