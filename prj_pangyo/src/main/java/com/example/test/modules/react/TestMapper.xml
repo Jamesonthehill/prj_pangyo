@@ -3,7 +3,7 @@
 
 
 <mapper namespace="com.example.test.modules.react.TestMapper">
-
+  
 	<resultMap id="getSelectList" type="Map">
 		<id column="gid" property="gid"/>
 		<id column="emd_cd" property="emd_cd"/>

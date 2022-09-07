@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 
 public class TestController{
-
+ 
 		@Autowired
 		TestService service;
 	
