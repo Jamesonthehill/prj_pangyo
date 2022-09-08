@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.example.demo.GeoMapper">
+  
+	<resultMap id="getSelectList" type="Map">
+		<id column="ID" property="ID"/>
+		<id column="NAME" property="NAME"/>
+		<id column="PASSWORD" property="PASSWORD"/>
+	</resultMap>
 
-
-<select id="selecList" resultType="demo">
-	SELECT 
-		ID
-		,NAME
-		,PASSWORD
-	FROM TEST
-	WHRE 1 = 1
-</select>
-
-
+	<select id="getSelectList" resultType="Map">
+		SELECT 
+		    ID
+		    ,NAME
+		    ,PASSWORD
+		FROM 
+		    TEST
+		WHERE  
+		    1 = 1
+	</select>
 
 </mapper>
