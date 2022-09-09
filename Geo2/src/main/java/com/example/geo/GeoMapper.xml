@@ -3,13 +3,13 @@
 
 <mapper namespace="com.example.geo.GeoMapper">
   
-	<resultMap id="getSelectList" type="Map">
+	<resultMap id="getSelectList" type="HashMap">
 		<id column="ID" property="ID"/>
 		<id column="NAME" property="NAME"/>
 		<id column="PASSWORD" property="PASSWORD"/>
 	</resultMap>
 
-	<select id="getSelectList" resultType="Map">
+	<select id="getSelectList" resultType="HashMap">
 		SELECT 
 		    ID
 		    ,NAME

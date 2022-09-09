@@ -15,18 +15,17 @@ public class GeoController {
 	@Autowired
 	GeoService service;
 	
-	@RequestMapping (value="index")
+	@RequestMapping (value="/index")
 	public String getSelectList(Model model) throws Exception {
 	
-			System.out.println("##### index.jsp를 시작합니다 #####");
+		System.out.println("##### index.jsp를 시작합니다 #####");
 		
-		List<HashMap<String, Object>> list = service.getSelectList();
+			List<HashMap<String, Object>> list = service.getSelectList();
 		
 				System.out.println("result : " + list.toString());
 		
-		
 	
-		return "index";
+	return "index";
 		}
 }		
 
